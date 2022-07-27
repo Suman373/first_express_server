@@ -35,15 +35,20 @@ app.use(express.urlencoded({extended : false}));
 // middlware for json
 app.use(express.json());
 
+
+//**** SERVING STATIC FILES**** */ 
 // serving static files (from public folder) readily to the client/user
 app.use('/', express.static(path.join(__dirname, '/public')));
 // server statics to subdir also
 app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
+
+// ******** ROUTES ***************
+// Requested routes are inside the route folder
 app.use('/', require('./routes/roots'));
 app.use('/subdir', require('./routes/subdir'));
+app.use('/colleagues', require('./routes/api/colleagues'));
 
-// REQUESTED ROUTES ARE IN THE ROOTS AND SUBDIR OF THE ROUTES FOLDER
 
 // every other routes
 // app.get('/*', (req,res)=>{

@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name" : "Suman Roy",
+        "position":"Web dev"
+    },
+    {
+        "id":2,
+        "name":"Tony Stark",
+        "position":"AI ML Robotics Expert"
+    },
+    {
+        "id":3,
+        "name":"Elon Musk",
+        "position":"Aeronautics Explosives Expert"
+    },
+    {
+        "id":4,
+        "name":"Johny Seens",
+        "position":"ALL-ROUNDER"
+    }
+]
