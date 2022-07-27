@@ -1,0 +1,42 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    overflow: hidden;
+    background: #2c1a2c;
+}
+.main-container{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.main-container h1{
+    font-size:8rem;
+    animation:disco 2000ms infinite;
+}
+@keyframes disco{
+    0%{
+        color:red;
+        transform:translateX(-2px);
+    }
+    25%{
+        color:yellow;
+        transform: translateX(2px);
+    }
+    75%{
+        color:green;
+        text-shadow: -2px 5px 10px blue;
+        transform:translateX(-2px);
+    }
+    100%{
+        color:blue;
+        text-shadow: -2px -5px 10px red;
+        transform: translateX(2px);
+    }
+}

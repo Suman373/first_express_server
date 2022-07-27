@@ -1,0 +1,8 @@
+27/07/2022 	 15:45:54	 bae2b7af-8025-4441-87d7-54080f4a9861	Error: undefined
+27/07/2022 	 15:47:52	 af606acf-b39e-4d7e-a43a-cc24f323d56c	Error: undefined
+27/07/2022 	 15:49:49	 e61e9f90-83cc-4cd9-9fe4-b4cbe2d1a5b9	Error: Hey : Not allowed By CORS 
+27/07/2022 	 16:08:34	 6c73db64-9714-4ee6-aa99-9269e3c66cdf	TypeError: path must be absolute or specify root to res.sendFile
+27/07/2022 	 16:08:50	 31b852b7-e391-4c8a-94a9-fa767533e75b	TypeError: path must be a string to res.sendFile
+27/07/2022 	 16:09:18	 2abbaf26-e44c-49fa-a329-9d6b0bf67fa6	TypeError: res.status(...).use is not a function
+27/07/2022 	 16:09:19	 1bb63b1a-5b7c-462b-8917-2d5284bafd24	TypeError: res.status(...).use is not a function
+27/07/2022 	 19:17:55	 9c62c0d6-c2c0-4a11-90d1-232f9fe1a75f	Error: Hey : Not allowed By CORS 
