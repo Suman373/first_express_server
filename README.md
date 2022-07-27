@@ -8,3 +8,22 @@
 - using built-in middlewares and making a custom error handler middleware.
 - logging requests and errors in files with `fs.write`
 - asynchronous dynamic CORS configuration
+
+
+### Getting started 
+run this command after cloning the repo.
+```
+npm install
+```
+
+install nodemon as dev dependency and fix the package.json like
+```
+"scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+```
+run this in your terminal 
+```
+npm run dev
+```
