@@ -6,3 +6,12 @@
 27/07/2022 	 16:09:18	 2abbaf26-e44c-49fa-a329-9d6b0bf67fa6	TypeError: res.status(...).use is not a function
 27/07/2022 	 16:09:19	 1bb63b1a-5b7c-462b-8917-2d5284bafd24	TypeError: res.status(...).use is not a function
 27/07/2022 	 19:17:55	 9c62c0d6-c2c0-4a11-90d1-232f9fe1a75f	Error: Hey : Not allowed By CORS 
+27/07/2022 	 20:16:58	 5a31b246-3cad-4cb1-b7f0-d76452632791	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\views\subdir\test.html'
+27/07/2022 	 20:17:03	 44489670-230d-46dd-83b7-a90708143cb7	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\views\subdir\test.html'
+27/07/2022 	 20:22:54	 9205a4b9-6fdc-4dd9-b59d-0f1165a0bc89	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\views\subdir\test.html'
+27/07/2022 	 20:47:33	 b5386fac-e9d2-4d74-aae7-d25554cbf760	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'
+27/07/2022 	 20:47:41	 f823b63e-c8c2-4dab-8622-d66356c72d80	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'
+27/07/2022 	 20:47:44	 59233d7f-ffc1-4470-ac57-eb9549d79ae8	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'
+27/07/2022 	 20:47:48	 222b07b4-fcbc-4466-babc-4166db42e632	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'
+27/07/2022 	 20:47:58	 ffcef38b-1331-442d-a926-f3eece292e11	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'
+27/07/2022 	 20:50:06	 02cff5f2-22e2-4e5a-be8e-d1217f1b2da5	Error: ENOENT: no such file or directory, stat 'C:\WEB DEV OP\Node\Basics\first_express_app\routes\views\new-page.html'

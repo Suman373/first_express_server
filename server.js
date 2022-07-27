@@ -36,25 +36,14 @@ app.use(express.urlencoded({extended : false}));
 app.use(express.json());
 
 // serving static files (from public folder) readily to the client/user
-app.use(express.static(path.join(__dirname, '/public')));
+app.use('/', express.static(path.join(__dirname, '/public')));
+// server statics to subdir also
+app.use('/subdir', express.static(path.join(__dirname, '/public')));
 
-// REQUESTED ROUTES
+app.use('/', require('./routes/roots'));
+app.use('/subdir', require('./routes/subdir'));
 
-// route for index/home page
-app.get('^/$|/index|/home?', (req,res)=>{
-    res.sendFile('./views/index.html', {root: __dirname});
-})
-
-// route for new page
-app.get('/new|/new-page|/new-page(.html)?',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'views', 'new-page.html'));
-    res.status(201);
-})
-
-// redirect to 
-app.get('/old-page(.html)?',(req,res)=>{
-    res.redirect(301,'/new-page.html'); // 302 default code
-})
+// REQUESTED ROUTES ARE IN THE ROOTS AND SUBDIR OF THE ROUTES FOLDER
 
 // every other routes
 // app.get('/*', (req,res)=>{
