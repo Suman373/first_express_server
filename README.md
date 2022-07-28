@@ -1,4 +1,4 @@
-### This is an Express Application 
+### This is an Express Server 
 
 #### Purpose : Since I am currently learning Node, I started dwelling with Express too which makes things more clear and helps us write less? I ain't no expert yet hehe. If you are viewing this, might wanna put ur personal opinions or tricks?
 
