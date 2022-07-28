@@ -4,6 +4,7 @@ const path = require('path');
 const {logger} = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler')
 const cors = require('cors');
+const corsOptions = require('./config/corsOptions');
 const PORT = process.env.PORT || 3400;
 // setting up of our app(formerly server)
 const app = express();
@@ -11,22 +12,7 @@ const app = express();
 // our custom middlware imported from the logEvents.js
 app.use(logger);
 
-// Cross Origin Resource Sharing, prevents access from other origin
-// whitelist bypasses the cors error, i.e., the origins in the whitelist will be able to fetch from the backend
-// configuring cors asynchronously dynamically from an allowed/whitelist urls
-const whitelist = ['http://localhost:5500','http://localhost:3400'] ;
-const corsOptions = {
-    origin:  (origin,callback) =>{
-        if(whitelist.indexOf(origin)!== -1 || !origin){
-            // allowed
-            callback(null,true);
-        }else{
-            callback(new Error("Hey : Not allowed By CORS ")); // create error
-            // callback(false,origin);
-        }
-    },
-    optionsSuccessStatus:200
-}
+// cors config
 app.use(cors(corsOptions));
 
 // middleware to handle urlencoded data (built-in)
@@ -55,6 +41,7 @@ app.use('/colleagues', require('./routes/api/colleagues'));
 //     res.status(404).sendFile(path.join(__dirname , 'views', '404.html')); // we put status 404 as while serving the 404.html, it gets status of 200 (file found in views folder)
 // })
 
+// **** Catch ALL 404 ***********
 app.all('*',(req,res)=>{
     res.status(404);
     if(req.accepts('html')){

@@ -2,21 +2,21 @@
     {
         "id":1,
         "name" : "Suman Roy",
-        "position":"Web dev"
+        "position":"Full stack Dev"
     },
     {
         "id":2,
-        "name":"Tony Stark",
-        "position":"AI ML Robotics Expert"
+        "name":"Ayan Naskar",
+        "position":"AI & Codebase Expert"
     },
     {
         "id":3,
-        "name":"Elon Musk",
-        "position":"Aeronautics Explosives Expert"
+        "name":"Soumik Jana",
+        "position":"Analyst & Db manager"
     },
     {
         "id":4,
-        "name":"Johny Seens",
-        "position":"ALL-ROUNDER"
+        "name":"Pritam Das",
+        "position":"System Designer + Arch manager"
     }
 ]
